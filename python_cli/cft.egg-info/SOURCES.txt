@@ -1,0 +1,6 @@
+setup.py
+cft.egg-info/PKG-INFO
+cft.egg-info/SOURCES.txt
+cft.egg-info/dependency_links.txt
+cft.egg-info/entry_points.txt
+cft.egg-info/top_level.txt
