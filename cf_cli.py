@@ -82,6 +82,7 @@ def submit(contest_id):
 
 
 def showHelp():
+    print("HOW TO USE")
     print("Create contest directory : \"cft n (contest id)\"")
     print("Test your code           : \"cft t\"")
     print("Submit your code         : \"cft s\"")
@@ -102,7 +103,7 @@ def main():
     if command == 'n':
         contest_id = args[2]
         if len(args) != 3:
-            print("Enter Correct Args")
+            print("Enter Correct Number of Args")
             showHelp()
             sys.exit()
         createContestDir(contest_id)
@@ -111,9 +112,10 @@ def main():
     elif command == 's':
         contest_id = args[2]
         if len(args) != 3:
-            print("Enter Correct Args")
+            print("Enter Correct Number of Args")
             showHelp()
             sys.exit()
         submit(contest_id)
     else:
         showHelp()
+        sys.exit()

@@ -1,9 +1,13 @@
 import setuptools
 
+with open("README.md") as f:
+    long_description = f.read()
+
 setuptools.setup(
     name="cft",
     version="1.0.0",
     description="codeforces command line tool",
+    long_description=long_description,
     author="granddaifuku",
     author_email="grandnadaifuku@gmail.com",
     packages=setuptools.find_packages(),
@@ -15,5 +19,6 @@ setuptools.setup(
     install_requirements=[
         "shutil", "requests"
     ],
+    platforms="any",
     license='MIT'
 )
