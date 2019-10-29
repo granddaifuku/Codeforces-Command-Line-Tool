@@ -5,6 +5,7 @@ setuptools.setup(
     version="1.0.0",
     description="codeforces command line tool",
     author="granddaifuku",
+    author_email="grandnadaifuku@gmail.com",
     packages=setuptools.find_packages(),
     entry_points={
         "console_scripts": [
