@@ -1,0 +1,3 @@
+[console_scripts]
+cft = cf_cli:main
+
