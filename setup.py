@@ -5,7 +5,7 @@ with open("README.md") as f:
 
 setuptools.setup(
     name="cft",
-    version="1.0.0",
+    version="1.0.3",
     description="codeforces command line tool",
     long_description=long_description,
     long_description_content_type="text/markdown",
