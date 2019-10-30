@@ -86,6 +86,7 @@ def showHelp():
     print("Create contest directory : \"cft n (contest id)\"")
     print("Test your code           : \"cft t\"")
     print("Submit your code         : \"cft s\"")
+    print("Login                    : \"oj l\"")
     print("Note : Contest id is " + str(contest_url) + "(contest id)")
 
 
