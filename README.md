@@ -3,7 +3,7 @@
 ## Description
 [Codeforces](https://codeforces.com) command line tools based on [online-judge-tools]()  
 * Automatically create contest directory
-* Test using sample cases
+* Test your code using sample cases
 * Submit your code
 <br>
 
