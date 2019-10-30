@@ -8,6 +8,7 @@ setuptools.setup(
     version="1.0.0",
     description="codeforces command line tool",
     long_description=long_description,
+    long_description_content_type="text/markdown",
     author="granddaifuku",
     author_email="grandnadaifuku@gmail.com",
     packages=setuptools.find_packages(),
