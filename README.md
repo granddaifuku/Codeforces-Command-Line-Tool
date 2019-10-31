@@ -22,4 +22,5 @@ $ cft n (contest id) # create contest directory
 $ cft t              # test your code using sample cases
 $ cft s (contest id) # submit your code
 $ cft h              # show help
+$ cft v              # show version
 ```
