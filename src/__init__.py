@@ -1,1 +1,5 @@
-
+__version__="1.0.21"
+__license__="MIT"
+__author__="granddaifuku"
+__author_email__="grandnadaifuku@gmail.com"
+__description__="Codeforces command line tool"

@@ -98,18 +98,17 @@ def submit(contest_id):
 
 
 def show_version():
-    base_dir = os.path.dirname(os.path.dirname(__file__))
-    with open(os.path.join(base_dir, "setup.py"), 'r') as f:
+    base_dir = os.path.dirname(__file__)
+    with open(os.path.join(base_dir, "__init__.py"), 'r') as f:
         lines = f.readlines()
         for line in lines:
-            if "version=" in line:
+            if "__version__=" in line:
                 chars = list(line)
                 s = ""
                 for c in chars:
                     if (c >= '0' and c <= '9') or c == '.':
                         s += c
                 print(s)
-                sys.exit()
 
 
 def show_help():
@@ -156,7 +155,3 @@ def main():
     else:
         show_help()
         sys.exit()
-
-
-if __name__ == "__main__":
-    show_version()
