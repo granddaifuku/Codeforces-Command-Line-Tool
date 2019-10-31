@@ -97,11 +97,27 @@ def submit(contest_id):
     os.system('oj s ' + contest_url + str(contest_id) + "/problem/" + index + " " + template)
 
 
+def show_version():
+    base_dir = os.path.dirname(os.path.dirname(__file__))
+    with open(os.path.join(base_dir, "setup.py"), 'r') as f:
+        lines = f.readlines()
+        for line in lines:
+            if "version=" in line:
+                chars = list(line)
+                s = ""
+                for c in chars:
+                    if (c >= '0' and c <= '9') or c == '.':
+                        s += c
+                print(s)
+                sys.exit()
+
+
 def show_help():
     print("HOW TO USE")
     print("Create contest directory : \"cft n (contest id)\"")
     print("Test your code           : \"cft t\"")
     print("Submit your code         : \"cft s\"")
+    print("Version                  : \"cft v\"")
     print("Login                    : \"oj l\"")
     print("Note : Contest id is " + str(contest_url) + "(contest id)")
 
@@ -118,6 +134,7 @@ def main():
         sys.exit()
     command = args[1]
     if command == 'n':
+        set_template()
         contest_id = args[2]
         if len(args) != 3:
             print("Enter Correct Number of Args")
@@ -127,14 +144,19 @@ def main():
     elif command == 't':
         test()
     elif command == 's':
+        set_template()
         contest_id = args[2]
         if len(args) != 3:
             print("Enter Correct Number of Args")
             show_help()
             sys.exit()
         submit(contest_id)
+    elif command == 'v':
+        show_version()
     else:
         show_help()
         sys.exit()
 
 
+if __name__ == "__main__":
+    show_version()
