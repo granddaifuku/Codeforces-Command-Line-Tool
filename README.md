@@ -24,4 +24,4 @@ $ cft s (contest id) # submit your code
 $ cft h              # show help
 $ cft v              # show version
 ```
-Note: https://codeforces.com/contest/(contest ID)
+Note: https\://codeforces.com\/contest/(contest ID)
